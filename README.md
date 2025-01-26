@@ -1,5 +1,7 @@
 # Text Scorer
 
+https://github.com/user-attachments/assets/71ed2541-8b55-4019-b6dd-ed904155eec3
+
 Have you ever thought about the quality of your writing? Whether it's for an assignment, a blog,  
 or professional communication, **TextScorer** App has got you covered. With Hugging Face models, we analyze your content to identify coherence, structure, and educational value. And the best part?  
 It’s simple to use. Input your text, and let our tools analyze and provide feedback in seconds.  
