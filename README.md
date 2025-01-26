@@ -105,7 +105,7 @@ Test it:
 
 Download the DB Browser for SQLite application and see the table of records by opening the test.db file.
 
-![][image1]
+![Image](https://github.com/user-attachments/assets/85eb963c-9ee2-4833-8bb3-bec5477a04e3)
 
 **Frontend Setup and Integration:**
 
@@ -139,14 +139,16 @@ frontend/
 
 Overview:
 
-![][image2]
+![Image](https://github.com/user-attachments/assets/08b0a2c9-c644-4062-80f2-947d2fb879e1)
 
 **Containerization using Docker**: For final deployment, (download Docker desktop)
 
 * Create a Dockerfile in the frontend directory and build the docker image & run  container.
 
-| docker build \-t textscoring-frontend .docker run \-d \-p 3000:80 \--name textscoring-frontend-container textscoring-frontend |
-| :---- |
+'''html
+docker build -t textscoring-frontend .
+docker run -d -p 3000:80 --name textscoring-frontend-container textscoring-frontend 
+'''
 
 
 * On running above commands, we can access the frontend on [http://localhost:3000](http://localhost:3000) .  
@@ -158,10 +160,11 @@ Overview:
 
 **Overview of localhost:8001 port (backend) after containerizing:** 
 
-![][image3]
+![Image](https://github.com/user-attachments/assets/60b6d4ba-504a-4503-8890-5c370e626403)
 
 **Overview of Docker Desktop (containers built after docker-compose containerization):**
 
+![Image](https://github.com/user-attachments/assets/a84dbdf5-737a-4cfb-9086-0f211a8a496e)
 
 
 
