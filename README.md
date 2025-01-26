@@ -60,7 +60,16 @@ Now you will be able to access the:
 
 Let's start with backend development first. In the project terminal,
 
-| cd backendpython3 \-m venv venvvenv\\Scripts\\activatepip install fastapi uvicorn sqlalchemy pydantic aiofiles python-multipart transformers torch |
+| cd backend |
+| :---- |
+
+| python \-m venv venv |
+| :---- |
+
+|venv\\Scripts\\activate |
+| :---- |
+
+| pip install fastapi uvicorn sqlalchemy pydantic aiofiles python-multipart transformers torch |
 | :---- |
 
 Created a virtual environment and activated it.  
@@ -73,15 +82,16 @@ Created a virtual environment and activated it.
 
 Initialize the project structure:  
 backend/  
-	app/  
-                 main.py                   
-                 database.py              
-	     models/                    
-		\_\_init**\_\_**.py  
-	     routers/	             
-		\_\_init\_\_.py  
-	     utils/		  
-		\_\_init\_\_.py
+├── app/  
+│   ├── main.py  
+│   ├── database.py  
+│   ├── models/  
+│   │   ├── __init__.py  
+│   ├── routers/  
+│   │   ├── __init__.py  
+│   ├── utils/  
+│   │   ├── __init__.py
+
 
 app/main.py: Sets up FastAPI and includes routing.  
 **app/database.py**:  Sets up SQLite and SQLAlchemy  
@@ -117,20 +127,19 @@ Create a basic react app in the frontend terminal using,
 Then integrate tailwind using the steps given on tailwindcss website.   
 Implement the codes.
 
-Directory structure:
-
 frontend/  
-	/public  
-	/src/  
-	     components/  
-			Footer.js  
-			Navbar.js  
-	     pages/  
-		 AnalyzePage.js  
-		 HistoryPage.js  
-		 LandingPage.js  
-	App.js  
-	…  
+├── public/  
+├── src/  
+│   ├── components/  
+│   │   ├── Footer.js  
+│   │   ├── Navbar.js  
+│   ├── pages/  
+│   │   ├── AnalyzePage.js  
+│   │   ├── HistoryPage.js  
+│   │   ├── LandingPage.js  
+│   ├── App.js
+
+   
 **Footer.js**: Has the implementation code of footer section.  
 **Navbar.js**: Top navigation bar section.  
 **AnalyzePage.js**: Implemented the functionality of scoring the inputs i.e text.  
@@ -145,10 +154,11 @@ Overview:
 
 * Create a Dockerfile in the frontend directory and build the docker image & run  container.
 
-'''
-docker build -t textscoring-frontend .
-docker run -d -p 3000:80 --name textscoring-frontend-container textscoring-frontend 
-'''
+| docker build \-t textscoring-frontend . |
+| :---- |
+
+| docker run \-d \-p 3000:80 \--name textscoring-frontend-container textscoring-frontend |
+| :---- |
 
 
 * On running above commands, we can access the frontend on [http://localhost:3000](http://localhost:3000) .  
