@@ -145,7 +145,7 @@ Overview:
 
 * Create a Dockerfile in the frontend directory and build the docker image & run  container.
 
-'''html
+'''
 docker build -t textscoring-frontend .
 docker run -d -p 3000:80 --name textscoring-frontend-container textscoring-frontend 
 '''
